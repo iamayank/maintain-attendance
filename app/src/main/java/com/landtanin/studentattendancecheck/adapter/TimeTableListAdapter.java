@@ -70,6 +70,11 @@ public class TimeTableListAdapter extends RealmRecyclerViewAdapter<StudentModule
                 itemHolder.itemView.setBackgroundColor(indegoColor);
                 itemHolder.statusTxt.setTextColor(blackColor);
             }
+            else if (timeTableItem.getModStatus().equals("no more class")) {
+                itemHolder.itemView.setBackgroundColor(greyColor);
+                itemHolder.statusTxt.setTextColor(blackColor);
+            }
+        
 
 
             SimpleDateFormat currentTimeFormat = new SimpleDateFormat("HH:mm");
