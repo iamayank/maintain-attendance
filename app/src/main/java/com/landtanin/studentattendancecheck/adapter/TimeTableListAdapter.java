@@ -69,9 +69,6 @@ public class TimeTableListAdapter extends RealmRecyclerViewAdapter<StudentModule
             } else if (timeTableItem.getModStatus().equals("inactive")) {
                 itemHolder.itemView.setBackgroundColor(indegoColor);
                 itemHolder.statusTxt.setTextColor(blackColor);
-            } else if (timeTableItem.getModStatus().equals("no more class")) {
-                itemHolder.itemView.setBackgroundColor(greyColor);
-                itemHolder.statusTxt.setTextColor(blackColor);
             }
 
 
